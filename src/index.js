@@ -1,3 +1,24 @@
+class Sorter {
+   constructor() {
+   this.mass =  [];
+  }
+
+  add(element) {
+    this.mass.push(element);
+    return this.mass;
+  }
+  at(index) {
+   return this.mass[index];
+  }
+
+  get length() {
+    return this.mass.length;
+  }
+
+  toArray() {
+   return this.mass;
+  }
+
 
   sort(indices) {
     //var arr = indices.split(',');
